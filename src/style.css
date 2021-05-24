@@ -20,6 +20,9 @@ li {
   color: #70757a;
   line-height: 19px;
 }
+li::first-letter {
+  text-transform: capitalize;
+}
 .weather-app {
   max-width: 600px;
   margin: 30px auto;
