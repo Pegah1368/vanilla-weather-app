@@ -74,6 +74,34 @@ function displayCelsiusTemperature(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = ` <div class="row">`;
+  let days = ["Fri", "Sat", "Sun", "mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` 
+              <div class="col-2">
+                <div class="weather-forcast-date">${day}</div>
+                <img
+                  src="http://openweathermap.org/img/wn/10d@2x.png"
+                  alt=""
+                  width="42"
+                />
+                <div class="weather-forcat-temperature">
+                  <span class="weather-forcast-temperature-max">18º</span>
+                  <span class="weather-forcast-temperature-min">12º</span>
+              </div>
+            </div>
+          `;
+  });
+
+  forecastHTML = forecastHTML + ` </div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 let celsiusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
@@ -83,3 +111,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("stockholm");
+displayForecast();
