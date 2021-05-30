@@ -1,6 +1,14 @@
 body {
-  font-family: "Roboto Slab", seri;
+  background-image: url(https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  margin: 150px;
+  font-size: 18px;
 }
+
 h1 {
   color: rgb(32, 33, 36);
   font-size: 34px;
@@ -13,12 +21,12 @@ ul {
 }
 li {
   list-style: none;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   font-weight: 100;
-  color: #70757a;
-  line-height: 19px;
+  color: #393e46;
+  line-height: 25px;
 }
 li::first-letter {
   text-transform: capitalize;
@@ -26,9 +34,12 @@ li::first-letter {
 .weather-app {
   max-width: 600px;
   margin: 30px auto;
-  padding: 20px;
-  border: 1px solid #75c8fe;
+  padding: 40px;
+  border: 1px solid #a7bbc7;
   border-radius: 5px;
+  background-color: #a7bbc7;
+  border-radius: 1em;
+  opacity: 1;
 }
 .weather-app-wrapper {
   max-width: 600px;
@@ -46,15 +57,15 @@ li::first-letter {
 }
 .weather-temperature strong {
   color: rgb(32, 33, 33);
-  font-size: 64px;
+  font-size: 100px;
   font-weight: 400;
   line-height: 1;
 }
 
 .weather-temperature .units {
   position: relative;
-  font-size: 16px;
-  top: -34px;
+  font-size: 30px;
+  top: -50px;
 }
 
 .weather-temperature .active {
@@ -70,6 +81,11 @@ li::first-letter {
   margin-top: 20px;
   text-align: center;
   font-size: 16px;
+  border: 1px solid #a7bbc7;
+  border-radius: 5px;
+  border-radius: 1em;
+  padding: 20px;
+  opacity: 1;
 }
 .weather-forcast-date {
   font-size: 16px;
@@ -81,4 +97,9 @@ li::first-letter {
 }
 .weather-forcast-temperature-min {
   opacity: 0.6;
+}
+
+.source {
+  font-family: "Noto Sans KR', sans-se";
+  font-size: 18px;
 }

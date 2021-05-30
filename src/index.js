@@ -8,7 +8,23 @@ function formatDate(date) {
     "Friday",
     "saturday",
   ];
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
   let day = days[date.getDay()];
+  let month = months[date.getMonth()];
+  let currentDate = date.getDate();
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0 ${hours}`;
@@ -17,7 +33,7 @@ function formatDate(date) {
   if (minutes < 10) {
     minutes = `0 ${minutes}`;
   }
-  return ` ${day}  ${hours} : ${minutes}`;
+  return ` ${day}, ${month} ${currentDate}, ${hours} : ${minutes}`;
 }
 let currentTime = new Date();
 let dateElement = document.querySelector("#date");

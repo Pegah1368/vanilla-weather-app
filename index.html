@@ -15,6 +15,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
@@ -39,14 +44,14 @@
                   <input
                     type="submit"
                     value="search"
-                    class="btn btn-primary w-100"
+                    class="btn btn-secondary w-100"
                   />
                 </div>
               </div>
             </form>
             <h1 id="city"></h1>
             <ul>
-              <li>Last updated :<span id="date"></span></li>
+              <li><span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
@@ -56,8 +61,6 @@
                 <img src="" alt="weather-icon" class="float-left" id="icon" />
                 <strong id="temperature"></strong>
                 <span class="units"> ºC </span>
-
-                >
               </div>
             </div>
             <div class="col-6">
@@ -70,7 +73,7 @@
           <div class="weather-forcast" id="forecast"></div>
         </div>
 
-        <smal>
+        <smal class="source">
           <a
             href="https://github.com/Pegah1368/vanilla-weather-app"
             target="_blank"
